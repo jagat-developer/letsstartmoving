@@ -237,8 +237,8 @@ export default function HomePage() {
       <section className="dark-feature" id="why">
         <div className="feature-image">
           <Image
-            src="/brand-assets/lets-start-moving-05.jpg"
-            alt="Professional moving team carrying boxes"
+            src="/brand-assets/lsm-ca-why.jpg"
+            alt="Professional movers loading boxes into a moving van"
             fill
             sizes="(max-width: 900px) 100vw, 42vw"
           />
