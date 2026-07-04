@@ -1,9 +1,10 @@
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone, Send } from "lucide-react";
 import { PageHero } from "@/components/PageParts";
 import { contact } from "@/lib/site-data";
 
 const contactCards = [
   { title: "Call Us", value: contact.phone, href: contact.phoneHref, helper: "Mon - Sun, 7am - 9pm", icon: Phone },
+  { title: "WhatsApp Us", value: contact.whatsapp, href: contact.whatsappHref, helper: "Send photos, inventory, or quick questions", icon: MessageCircle },
   { title: "Email Us", value: contact.primaryEmail, href: contact.primaryEmailHref, helper: contact.secondaryEmail, icon: Mail },
   { title: "Our Address", value: "3 Banner Road, Nepean", helper: "K2H 8T3, Ottawa, Canada", icon: MapPin },
 ];
@@ -14,7 +15,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact us"
         title="We are here to help you move."
-        subtitle="Have a question or ready to book your move? Reach out and get a prompt response from the Ottawa team."
+        subtitle="Have a question or ready to book your local, Canada-wide, or America-bound move? Reach out and get a prompt response from the Ottawa team."
         image="/brand-assets/lsm-ca-hero.jpg"
       />
 
@@ -35,13 +36,18 @@ export default function ContactPage() {
           <h2>Choosing us means selecting a dedicated team.</h2>
           <p>
             The team is committed to customer success, satisfaction, and
-            delivering the best moving transportation experience. Your move can
-            begin with one call or one message.
+            delivering the best moving transportation experience across Canada
+            and America. Your move can begin with one call, one form, or one
+            WhatsApp message.
           </p>
           <div className="check-list contact-detail-list">
             <span>
               <Phone size={18} aria-hidden="true" />
               {contact.phone}
+            </span>
+            <span>
+              <MessageCircle size={18} aria-hidden="true" />
+              <a href={contact.whatsappHref}>{contact.whatsapp}</a>
             </span>
             <span>
               <Mail size={18} aria-hidden="true" />

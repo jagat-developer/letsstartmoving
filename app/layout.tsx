@@ -3,9 +3,9 @@ import { SiteChrome } from "@/components/SiteChrome";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Let's Start Moving Ottawa | Premium Moving Services",
+  title: "Let's Start Moving Ottawa | Canada & America Moving Services",
   description:
-    "Modern premium website concept for Let's Start Moving Ottawa, built around careful local, residential, commercial, packing, and long-distance moving services.",
+    "Modern premium website for Let's Start Moving Ottawa, built around local, Canada-wide, America-bound, residential, commercial, packing, and long-distance moving services.",
 };
 
 export default function RootLayout({

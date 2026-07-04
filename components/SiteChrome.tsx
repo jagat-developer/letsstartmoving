@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Mail, MapPin, Menu, Phone, X } from "lucide-react";
+import { Mail, MapPin, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { contact, navLinks, serviceGroups } from "@/lib/site-data";
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
@@ -97,6 +97,10 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
             <Link className="btn btn-primary" href="/get-a-quote" onClick={closeMenu}>
               Request a Free Quote
             </Link>
+            <a className="btn btn-dark" href={contact.whatsappHref} onClick={closeMenu}>
+              <MessageCircle size={18} aria-hidden="true" />
+              WhatsApp
+            </a>
           </div>
         ) : null}
       </header>
@@ -112,8 +116,9 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
             height={99}
           />
           <p>
-            Your trusted partner for hassle-free relocations across Ottawa and
-            surrounding areas. Professional, reliable, and budget-friendly.
+            Your trusted partner for hassle-free relocations across Ottawa,
+            Canada, and America-bound routes. Professional, reliable, and
+            budget-friendly.
           </p>
         </div>
         <div>
@@ -135,6 +140,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
         <div>
           <h2>Contact</h2>
           <a href={contact.phoneHref}>{contact.phone}</a>
+          <a href={contact.whatsappHref}>{contact.whatsapp}</a>
           <a href={contact.primaryEmailHref}>{contact.primaryEmail}</a>
           <a href={contact.secondaryEmailHref}>{contact.secondaryEmail}</a>
           <span>{contact.addressLong}</span>

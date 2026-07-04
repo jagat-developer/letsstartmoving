@@ -44,6 +44,8 @@ export type ServicePage = {
 export const contact = {
   phone: "+1 613-770-9139",
   phoneHref: "tel:+16137709139",
+  whatsapp: "WhatsApp us",
+  whatsappHref: "https://wa.me/16137709139",
   primaryEmail: "ottawalsm@gmail.com",
   primaryEmailHref: "mailto:ottawalsm@gmail.com",
   secondaryEmail: "letsstartmovingcanada@gmail.com",
@@ -59,6 +61,7 @@ export const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about-us" },
   { label: "Services", href: "/services" },
+  { label: "Locations", href: "/#areas" },
   { label: "Video Quote", href: "/video-quote" },
   { label: "Contact", href: "/contact-us" },
 ];
